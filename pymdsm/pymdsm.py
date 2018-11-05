@@ -1,7 +1,7 @@
 from markdown.extensions import Extension
 from markdown.inlinepatterns import SimpleTagPattern
 
-SMALL_TEXT_REGEX = r'(?<!\.)(\.{2})([^\.]*?)(\.{2})(?!\.)'
+SMALL_TEXT_REGEX = r'(\.{2})(.*?)(\.{2})'
 
 class PymdsmExtension(Extension):
     """Adds Small extension to Markdown class."""
